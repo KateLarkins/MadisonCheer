@@ -1,0 +1,48 @@
+li {
+    display: inline;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color:maroon;
+  }
+h1 {
+
+    color: maroon;
+}
+h4 {
+    font-family:fantasy;
+    color: maroon;   
+}
+.body {
+   background-color: rgb(14, 14, 40); 
+   margin-top: 2ch;
+   margin-right: 50px;
+   margin-left: 50px;
+
+
+}
+.active {
+    background-color: rgb(14, 14, 40);
+  }
+
+.navbar-nav > li {
+    margin-left:30px;
+    margin-right:30px;
+}
