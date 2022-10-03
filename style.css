@@ -24,11 +24,9 @@ li {
   }
 h1 {
     color: maroon;
-    font-family: Debby;  
 }
 h4 {
     color: maroon;   
-    font-family:
 }
 .body {
    background-color: rgb(14, 14, 40); 
@@ -47,3 +45,14 @@ h4 {
     margin-right:30px;
 }
 
+.nav-item {
+  font-family: fantasy
+}
+
+.navbar-brand {
+  font-family:fantasy;
+}
+
+iframe {
+
+}
