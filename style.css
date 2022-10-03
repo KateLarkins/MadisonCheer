@@ -7,14 +7,17 @@
 }
 
 nav li {
-    display: inline;
+    display: inline-block;
     position:relative;
   }
 
+.logo {
+  float:left;
+}
 nav a::before {
-  content: '';
+
   display: block;
-  height: 2px;
+  height: 5px;
   width:0%;
   background-color:maroon;
 }
@@ -67,21 +70,13 @@ h4 {
   font-size: 50px;
 }
 
-
-not working
-
-li {
-  float: inline-start;
+.carousel {
+position: absolute;
+height:600px;
+width:80%;
+margin:auto;
 }
-
-.logo {
-  float: left;
-  font-size: larger;
-}
-.nav {
-  font-size: larger;
-}
-
-.me-2 {
-  float: right;
+.carousel-inner {
+  inherits: 200,
+  wrap: false
 }
