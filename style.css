@@ -1,40 +1,52 @@
-li {
+
+.body {
+  background-color: rgb(14, 14, 40); 
+  margin-top: 2ch;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+nav li {
     display: inline;
+    position:relative;
   }
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 2px;
+  width:0%;
+  background-color:maroon;
+}
+
+nav a:hover::before {
+  width:100%;
+}
+
+
   ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
   }
-  
-  li {
-    float: left;
-  }
+
   
   li a {
     display: block;
-    color: white;
     text-align: center;
     text-decoration: none;
   }
   
-  li a:hover {
-    background-color:maroon;
-  }
 h1 {
     color: maroon;
+    font-family: 'Cookie', cursive;
 }
 h4 {
-    color: maroon;   
-}
-.body {
-   background-color: rgb(14, 14, 40); 
-   margin-top: 2ch;
-   margin-right: 50px;
-   margin-left: 50px;
-
-
+    color: rgb(154, 13, 13); 
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+    font-style:normal;
 }
 .active {
     background-color: rgb(14, 14, 40);
@@ -46,10 +58,30 @@ h4 {
 }
 
 .nav-item {
-  font-family: fantasy
+  font-family: 'Cookie', cursive;
+  font-size: 50px;
 }
 
 .navbar-brand {
-  font-family:fantasy;
+  font-family: 'Cookie', cursive;
+  font-size: 50px;
 }
 
+
+not working
+
+li {
+  float: inline-start;
+}
+
+.logo {
+  float: left;
+  font-size: larger;
+}
+.nav {
+  font-size: larger;
+}
+
+.me-2 {
+  float: right;
+}
