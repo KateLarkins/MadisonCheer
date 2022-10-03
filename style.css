@@ -14,10 +14,11 @@ nav li {
 .logo {
   float:left;
 }
-nav a::before {
 
+nav a::before {
+  content:'';
   display: block;
-  height: 5px;
+  height: 2px;
   width:0%;
   background-color:maroon;
 }
@@ -78,5 +79,4 @@ margin:auto;
 }
 .carousel-inner {
   inherits: 200,
-  wrap: false
 }
