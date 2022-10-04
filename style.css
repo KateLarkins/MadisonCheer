@@ -4,13 +4,58 @@
   margin-top: 2ch;
   margin-right: 50px;
   margin-left: 50px;
+  font-family: 'Raleway', sans-serif;
+}
+  
+h1 {
+    color: maroon;
+    font-family: 'Cookie', cursive;
+}
+h5 {
+  color: maroon;
+  font-family: 'Raleway', sans-serif;
 }
 
-nav li {
-    display: inline-block;
-    position:relative;
+h4 {
+    color: rgb(154, 13, 13); 
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+    font-style:normal;
+}
+
+.active {
+    background-color: rgb(14, 14, 40);
+  }
+  .search {
+    height:20px;
   }
 
+.cheer {
+  text-align: center;
+}
+.dances {
+  text-align: center;
+}
+.stretches {
+  text-align: center;
+}
+______________________________________________________________
+#navbar
+______________________________________________________________
+.navbar-nav > li {
+    margin-left:30px;
+    margin-right:30px;
+}
+
+.nav-item {
+  font-family: 'Cookie', cursive;
+  font-size: 50px;
+}
+
+.navbar-brand {
+  font-family: 'Cookie', cursive;
+  font-size: 50px;
+}
 .logo {
   float:left;
 }
@@ -41,42 +86,211 @@ nav a:hover::before {
     text-align: center;
     text-decoration: none;
   }
+
+
+
+______________________________________________________________
+#Carousel
+______________________________________________________________
+
+
+.carousel { z-index: -99; } /* keeps this behind all content */
+.carousel-item {
+    position: fixed; 
+    opacity: 0;
+    left:0 !important;
+   width: 100%; height: 100%;
+   -webkit-transition: opacity 0.5s;
+   -moz-transition: opacity 0.5s;
+   -ms-transition: opacity 0.5s;
+   -o-transition: opacity 0.5s;
+   transition: opacity 0.5s;
+   }
+
+.carousel { z-index: -99; } /* keeps this behind all content */
+.carousel .item {
+    position: fixed; 
+    width: 100%; height: 100%;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -ms-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+
+}
+.carousel .one {
+    background: url(https://i.imgur.com/XVOLpDj.jpeg);
+    background-size: cover;
+    -moz-background-size: cover;
+}
+.carousel .two {
+    background: url(https://i.imgur.com/RMR0qT9.jpeg);
+    background-size: cover;
+    -moz-background-size: cover;
+}
+.carousel .three {
+    background: url(https://i.imgur.com/WsDegIv.jpeg);
+    background-size: cover;
+    -moz-background-size: cover;
+}
+.carousel .active {
+  opacity: 1 !important;
+  }
   
-h1 {
-    color: maroon;
-    font-family: 'Cookie', cursive;
-}
-h4 {
-    color: rgb(154, 13, 13); 
-    font-family: 'Raleway', sans-serif;
-    font-weight: bolder;
-    font-style:normal;
-}
-.active {
-    background-color: rgb(14, 14, 40);
+  .carousel .left {
+  opacity: 1 !important;
+  -webkit-transition: opacity 0.5s  !important;
+  -moz-transition: opacity 0.5s  !important;
+  -ms-transition: opacity 0.5s  !important;
+  -o-transition: opacity 0.5s  !important;
+  transition: opacity 0.5s  !important;
   }
 
-.navbar-nav > li {
-    margin-left:30px;
-    margin-right:30px;
+______________________________________________________________
+#About
+______________________________________________________________
+
+.about .content ul li+li {
+  margin-top: 10px;
 }
 
-.nav-item {
-  font-family: 'Cookie', cursive;
-  font-size: 50px;
+.about .content ul i {
+  position: absolute;
+  left: 0;
+  top: 2px;
+  font-size: 20px;
+  color: #2487ce;
+  line-height: 1;
 }
 
-.navbar-brand {
-  font-family: 'Cookie', cursive;
-  font-size: 50px;
+.about .content .btn-learn-more {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 5px;
+  transition: 0.3s;
+  line-height: 1;
+  color: #2487ce;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  margin-top: 6px;
+  border: 2px solid #2487ce;
 }
 
-.carousel {
-position: absolute;
-height:600px;
-width:80%;
-margin:auto;
+.about .content .btn-learn-more:hover {
+  background: #2487ce;
+  color: #fff;
+  text-decoration: none;
 }
-.carousel-inner {
-  inherits: 200,
+
+
+
+
+#hero {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: url("../img/hero-bg.jpg") top center;
+  background-size: cover;
+  position: relative;
+}
+
+#hero:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#hero .container {
+  padding-top: 80px;
+}
+
+#hero h2 {
+  color: #5e5e5e;
+  margin: 10px 0 0 0;
+  font-size: 22px;
+}
+
+#hero .btn-get-started {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  padding: 14px 50px;
+  border-radius: 5px;
+  transition: 0.5s;
+  margin-top: 30px;
+  color: #fff;
+  background: #2487ce;
+}
+
+#hero .btn-get-started:hover {
+  background: #3194db;
+}
+
+#hero .icon-boxes {
+  margin-top: 100px;
+}
+
+#hero .icon-box {
+  padding: 50px 30px;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 0 29px 0 rgba(18, 66, 101, 0.08);
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+  z-index: 1;
+}
+
+#hero .icon-box .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+#hero .icon-box .title a {
+  color: #124265;
+  transition: 0.3s;
+}
+
+#hero .icon-box .description {
+  font-size: 15px;
+  line-height: 28px;
+  margin-bottom: 0;
+}
+
+#hero .icon-box .icon {
+  margin-bottom: 20px;
+  padding-top: 10px;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+  font-size: 36px;
+  line-height: 1;
+  color: #2487ce;
+}
+
+#hero .icon-box:hover {
+  transform: scale(1.08);
+}
+
+#hero .icon-box:hover .title a {
+  color: #2487ce;
+}
+
+#hero h1 {
+  font-size: 55px;
+  line-height: 36px;
+}
+
+#hero h2 {
+  font-size: 18px;
+  line-height: 24px;
 }
