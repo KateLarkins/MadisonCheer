@@ -103,20 +103,19 @@ nav a:hover::before {
 }
 
 
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
 
   
-  li a {
-    display: block;
-    text-align: center;
-    text-decoration: none;
-  }
-
+li a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
 
 Carousel
 
@@ -200,6 +199,7 @@ ______________________________________________________________
 #hero .icon-boxes {
   margin-top: 100px;
   margin-left: 200px;
+  margin-bottom: 5px ;
 }
 
 #hero .icon-box {
