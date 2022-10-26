@@ -195,17 +195,12 @@ ______________________________________________________________
 }
 
 
-#hero .icon-boxes {
-  margin-top: 100px;
-  margin-left: 200px;
-  margin-bottom: 5px ;
-}
-
 #hero .icon-box {
   padding-left: 50px;
   padding-right: 50px;
   padding-top: 50px;
   padding-bottom: 50px;
+  align-items: center;
 
   position: relative;
   overflow: hidden;
