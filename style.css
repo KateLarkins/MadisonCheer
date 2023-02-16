@@ -1,6 +1,6 @@
 
 .body {
-  background-color: rgb(14, 14, 40); 
+  background-color: rgb(255, 255, 255); 
   margin-top: 0ch;
   margin-right: 50px;
   margin-left: 50px;
@@ -36,7 +36,7 @@ h4 {
   margin-left: 80px;
 }
 .active {
-    background-color: rgb(14, 14, 40);
+    background-color: rgb(229, 230, 255);
   }
 
 .cheer {
@@ -252,3 +252,8 @@ ______________________________________________________________
   font-size: 18px;
   line-height: 24px;
 }
+
+
+
+
+
